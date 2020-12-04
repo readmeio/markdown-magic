@@ -1,7 +1,7 @@
 const React = require('react');
 const { shallow } = require('enzyme');
 
-const { GlossaryItem } = require('../GlossaryItem.jsx');
+const { GlossaryItem } = require('../src/GlossaryItem');
 
 test('should output a glossary item if the term exists', () => {
   const term = 'acme';

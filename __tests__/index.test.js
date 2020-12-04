@@ -1,8 +1,8 @@
 const { shallow, mount } = require('enzyme');
 const React = require('react');
-const BaseUrlContext = require('../contexts/BaseUrl');
+const BaseUrlContext = require('../src/contexts/BaseUrl');
 
-const markdown = require('..');
+const markdown = require('../src');
 
 test('image', () => {
   expect(shallow(markdown('![Image](http://example.com/image.png)')).html()).toMatchSnapshot();
